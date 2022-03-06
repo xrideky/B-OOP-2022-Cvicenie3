@@ -2,15 +2,23 @@ package sk.stuba.fei.uim.oop.auto;
 
 public class Auto {
    public static final double PALIVO_NA_KM=0.2;
+   public static final double KAPACITA_NADRZE=100;
    private double stavNadrze;
    private double kapacitaNadrze;
    private boolean ojazdene;
 
+   //konštruktor
    public Auto(){
-       this.ojazdene=true;
-       this.kapacitaNadrze=100;
-       this.stavNadrze=50;
+     this(KAPACITA_NADRZE);
    }
+
+   //konštruktor so stupným argumentom
+    public Auto(double kapacitaNadrze){
+        this.ojazdene=true;
+        this.stavNadrze=50;
+        this.kapacitaNadrze=kapacitaNadrze;
+    }
+
 
    public void jazdi(double vzdialenost){
        this.ojazdene=true;
