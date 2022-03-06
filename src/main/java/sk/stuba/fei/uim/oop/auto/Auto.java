@@ -6,6 +6,12 @@ public class Auto {
    private double kapacitaNadrze;
    private boolean ojazdene;
 
+   public Auto(){
+       this.ojazdene=true;
+       this.kapacitaNadrze=100;
+       this.stavNadrze=50;
+   }
+
    public void jazdi(double vzdialenost){
        this.ojazdene=true;
         stavNadrze = stavNadrze-vzdialenost * PALIVO_NA_KM; //na 1km bude spotreba 0.2 paliva
