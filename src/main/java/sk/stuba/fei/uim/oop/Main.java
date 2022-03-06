@@ -5,17 +5,12 @@ import sk.stuba.fei.uim.oop.auto.Auto;
 public class Main {
     public static void main(String[] args) {
         Auto skoda=new Auto();
-        Auto bmw= new Auto();
 
-        skoda.jedna=5;
-        bmw.jedna=7;
+        skoda.stavNadrze=60;
+        skoda.jazdi(100);
+        System.out.println(skoda.stavNadrze);
 
-        if(bmw.jedna==skoda.jedna){
-            System.out.println("rovnake");
-        }
-        else {
-            System.out.println("rôzne");
-        }
-
+        skoda.jazdi(200);
+        System.out.println(skoda.stavNadrze);
     }
 }
